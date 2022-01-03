@@ -1,0 +1,66 @@
+package com.our.home02_08;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		
+		Player player = new Player();
+		
+		int a = player.playerA;				// A가 낸거
+		int b = player.playerB;				// B가 낸거
+		
+		
+		System.out.println("A 선수는 : " + a + " , B선수는 : " + b);
+		
+		
+		
+		if (a == 1 && b == 2 ) {
+			System.out.println("A는 가위, B는 바위 / B가 이겼습니다." );
+		}else if (a == 2 && b == 3) {
+			System.out.println("A는 바위, B는 보 / B가 이겼습니다." );
+		}else if (a == 3 && b == 1) {
+			System.out.println("A는 보, B는 가위 / B가 이겼습니다." );
+		}else if (a == 2 && b == 1) {
+			System.out.println("A는 바위, B는 가위 / A가 이겼습니다." );
+		}else if (a == 3 && b == 2) {
+			System.out.println("A는 보, B는 바위 / A가 이겼습니다." );
+		}else if (a == 1 && b == 3) {
+			System.out.println("A는 가위, B는 보 / A가 이겼습니다." );
+		}else {
+			System.out.println("비겼습니다.");
+		}
+		
+		
+		
+	}
+
+}
+==
+package com.our.home02_08;
+
+import java.util.Random;
+
+public class Player {
+
+	
+//	int[] playerA = {1,2,3};
+//	int[] playerB = {1,2,3};
+//
+//	
+//	double randomA = Math.random();
+//	double randomB = Math.random();
+
+	Random random = new Random();
+	
+	int playerA = random.nextInt(3)+1;
+	int playerB = random.nextInt(3)+1;
+
+// 1 = 가위, 2 = 바위, 3 = 보
+	
+	
+
+}
+
