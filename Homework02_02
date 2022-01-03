@@ -1,0 +1,69 @@
+package com.our.home02_02;
+
+public class MainNation01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		System.out.println("This is MainNation01[]");
+		
+		
+		Nation_01 na1 = new Nation_01();			//각각의 nation 01 02 03 불러오기
+		Nation_02 na2 = new Nation_02();
+		Nation_03 na3 = new Nation_03();
+		
+		
+		//na1.nameNation01 = "northKorea";
+		
+		na1.showName();
+		na2.showName();
+		na3.showName();
+		
+		
+		
+	}
+
+}
+
+==
+package com.our.home02_02;
+
+public class Nation_01 extends MainNation01{
+
+	String nameNation01 = "Korea";
+	
+	public void showName() {
+		System.out.println("This is : " + nameNation01);
+	}
+
+}
+==
+package com.our.home02_02;
+
+public class Nation_02 extends MainNation01 {
+
+	String nameNation02 = "America";
+	
+	public void showName() {
+		System.out.println("This is : " + nameNation02);
+	}
+	
+	
+	
+}
+==
+
+
+package com.our.home02_02;
+
+public class Nation_03 extends MainNation01 {
+
+	String nameNation03 = "Japan";
+	
+	public void showName() {
+		System.out.println("This is : " + nameNation03);
+	}
+
+}
+
+
