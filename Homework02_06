@@ -1,0 +1,133 @@
+package com.our.home02_06;
+
+public class MainComputer {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		Desktop desktop = new Desktop();
+		Keyboard keyboard = new Keyboard();
+		Monitor monitor = new Monitor();
+		
+		System.out.println(desktop.power);
+		System.out.println(keyboard.KeyConnect);
+		System.out.println(monitor.moConnect);
+		
+		
+		
+		desktop.desktopPowerOn();	// 데탑키는문구
+//		desktop.desktopPowerOff();	// 켜는 문구
+		
+		if (desktop.power == true) {		// 데탑이 켜지면
+			
+			keyboard.keyConnectOn();		// 키보드 모니터 둘다 켜짐
+			monitor.moConnectOn();
+		} else {
+			keyboard.keyConnectOff();
+			monitor.moConnectOff();
+		}
+		
+		
+		// true값 확인하려고 만듬
+		System.out.println(desktop.power);
+		System.out.println(keyboard.KeyConnect);
+		System.out.println(monitor.moConnect);
+		
+		
+		if (desktop.power == true && keyboard.KeyConnect == true && monitor.moConnect==true) {
+			System.out.println("컴퓨터가 켜졌습니다.");
+			
+		}else {
+			System.out.println("컴퓨터가 꺼져있습니다.");
+		}
+		
+		
+		
+	}
+
+}
+
+
+
+==
+package com.our.home02_06;
+
+public class Desktop {
+
+	
+	boolean power = false;			// 처음에 꺼져있어야하니까 false로 설정
+	
+	public boolean desktopPowerOn() { //power on/off알기위해 메소드설정
+		
+		power = true;
+		return power; // power/onoff 리턴
+	}
+	
+	//boolean타입이라 boolean으로하고 뒤에 이름은 끄는거라 off로
+	public boolean desktopPowerOff() { //power on/off알기위해 메소드설정
+		
+		power = false;
+		return power; // power/onoff 리턴
+	}
+	
+	
+	
+	
+}
+
+==
+package com.our.home02_06;
+
+public class Keyboard {
+
+	
+	boolean KeyConnect = false;
+	
+	public boolean keyConnectOn() {
+		
+		KeyConnect = true;
+		return KeyConnect;
+	}
+	
+	public boolean keyConnectOff() {
+		
+		KeyConnect = false;
+		return KeyConnect;
+	}
+	
+	
+	
+	
+	
+	
+}
+==
+package com.our.home02_06;
+
+public class Monitor {
+
+	
+	boolean moConnect = false;
+	
+	public boolean moConnectOn() {
+		
+		moConnect = true;
+		return moConnect;
+		
+	}
+	
+	public boolean moConnectOff() {
+		
+		moConnect = false;
+		return moConnect;
+		
+	}
+	
+	
+	
+	
+	
+}
+
+
