@@ -1,0 +1,32 @@
+package com.our.home02_03;
+
+import org.omg.CORBA.PRIVATE_MEMBER;
+
+public class MainNation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		Nation na = new Nation();
+		
+		
+		// private 사용하면 다른 객체클래스에서 사용불가 
+		// 즉 뜨지않음
+		
+	}
+
+}
+
+
+////////////////////////////////////////////////////
+class Nation{
+	
+	private String nationName;
+	public int area;
+	public int population;
+	
+	
+}
+
+
