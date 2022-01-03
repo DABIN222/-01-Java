@@ -1,0 +1,11 @@
+package com.our.home02_04;
+
+public class MainNation {
+	
+	
+	static String Mars;
+	static String Earth;
+	
+	// static 
+
+}
