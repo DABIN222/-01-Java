@@ -1,0 +1,78 @@
+package com.our.home02_01;
+
+public class MainPractice01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		Nation nation = new Nation();					// nation가져오기 정의
+		System.out.println(nation.nationName);
+		System.out.println(nation.area);
+		System.out.println(nation.population);
+	
+//		System.out.println(nation.getNationName());		// get nation으로해도 korea값이 나옴
+		
+		nation.setNationName("America");				// 
+		nation.setArea(10000);
+		nation.setPopulation(50000);
+		
+		System.out.println(nation.getNationName());
+		System.out.println(nation.getArea());
+		System.out.println(nation.getPopulation());
+		
+		System.out.println(nation.nationName);
+		System.out.println(nation.area);
+		System.out.println(nation.population);
+		
+		
+		
+		
+		
+package com.our.home02_01;
+
+public class Nation {
+
+	
+		String nationName = "Korea";	// 나라이름?
+		int area = 3000;				// 면적
+		int population = 5000;			// 인구
+		
+		//public void chainName() {			
+		//	this.nationName = nationName;		// 위에 정의해놓고 이름을 바꾸니까 위에 이름이(this)가 바꾼이름(= 바꿀이름)이 된다.
+		//}
+
+		
+		
+		public String getNationName() {
+			return nationName;				// String타입이라 string으로 리턴
+		}
+
+		public void setNationName(String nationName) {
+			this.nationName = nationName;	// 내가 설정한 나라이름으로 바꾸겠다.
+		}
+
+		public int getArea() {
+			return area;
+		}
+
+		public void setArea(int area) {
+			this.area = area;
+		}
+
+		public int getPopulation() {
+			return population;
+		}
+
+		public void setPopulation(int population) {
+			this.population = population;
+		}
+		
+				
+		
+		
+		
+		
+	}
+
+}
